@@ -2,8 +2,8 @@
 
 {% import "_modules/link/link.nunjucks" as link %}
 
-{% block headline %}This is my headline{% endblock %}
- {% block byline %}Peter, peter, and peter {% endblock %}
+{% block headline %}COURTESY OF LA TIMES{% endblock %}
+ {% block byline %}Peter Pulp {% endblock %}
 {% block pubdate %} 
 <time datetime="2020-03-07" pubdate >
   March 7, 2020
@@ -11,6 +11,15 @@
   {% endblock %}
 
   {% block content %}
+  <div id="map"></div>
+  <h3> A South L.A Neighborhood Stands Apart </h3>
+  <p> Harvard Park's 2016 homicide total was its highest in 15 years. </p>
+  
+  <div class="charts">
+    <div class="inline-chart" id="county-homicides"></div>
+      <h4 class = "chart-title">County homicides, 2000-2017 </h4>
+    <div class="inline-chart" id="harvard-park-homicides"></div>
+  </div>
 <section>
   <h3> Lives Lost in Harvard Park</h3>
   <p>The {{ site.data.harvard_park_homicides |length }} homicides in Harvard Park since 2000 were primarily black and Latino males, but the list includes husbands, mothers, and even small children. </p>
